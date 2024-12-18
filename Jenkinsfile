@@ -5,14 +5,14 @@ agent any
     stages{
         stage("compile"){
             steps{
-                bat 'javac Test.java'
+                bat 'javac Main.java'
             }
 
         }
 
         stage("run"){
             steps{
-                bat "java Test"
+                bat "java Main"
             }
         }
     }

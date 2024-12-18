@@ -20,7 +20,7 @@ agent any
     post{
 
         always{
-            sh 'echo "always"'
+            bat 'echo "always"'
         }
 
         success{
@@ -28,7 +28,7 @@ agent any
         }
 
         failure{
-            sh 'echo "failure"'
+            bat 'echo "failure"'
         }
     }
 

@@ -17,5 +17,20 @@ agent any
         }
     }
 
+    post{
+
+        always{
+            sh 'echo "always"'
+        }
+
+        success{
+            bat 'echo "success"'
+        }
+
+        failure{
+            sh 'echo "failure"'
+        }
+    }
+
 
 }
